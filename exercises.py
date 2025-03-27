@@ -234,4 +234,18 @@ def guess_number():
 # Call the function
 guess_number()
 
+color = ''
 
+while color != 'quit':
+    color = input('Enter "green", "yellow", "red", or enter "quit" to exit: ').lower()
+    print(f'The user entered {color}')
+    if color == 'green':
+        print("Go!")
+    elif color == 'yellow':
+        print("Caution!")
+    elif color == 'red':
+        print("Stop!")
+    elif color == 'quit':
+        print("Goodbye...")
+    else:
+        print("Bogus!")
